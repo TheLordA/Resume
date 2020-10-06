@@ -20,7 +20,6 @@ const MainBody = React.forwardRef(({ gradient, title, message, icons, letterCrap
 			<div id="stars"></div>
 			<Container className="text-center">
 				<h1 ref={ref} className="display-1">
-					{title}
 					<div
 						className={`${letterCrap && width > 1200 ? "" : "d-none"}`}
 						data-lettercrap-text={title}
@@ -32,7 +31,7 @@ const MainBody = React.forwardRef(({ gradient, title, message, icons, letterCrap
 					{" "}
 					{message}
 				</Typist>
-				<div className="p-5">
+				<div className="p-4">
 					{icons.map((icon, index) => (
 						<a
 							key={`social-icon-${index}`}
