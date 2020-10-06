@@ -57,7 +57,7 @@ const about = {
 	imageSize: 375,
 	message:
 		"My name is Ferrak Anass known as @TheLordA. I’m a graduate of 2020 from National Higher School of Informatics and Systems Analysis (ENSIAS) at Rabat, Morocco with a degree in Computer Engineering specialist in Web Engineering and Mobile Computing. I see myself as a FullStack JS Engineer and Web Developer. In my free time I like working on open source projects and learning new things. ",
-	resume: require("../editable-stuff/resume.pdf"),
+	resume: require("../editable-stuff/resume(French).pdf"),
 };
 
 // PROJECTS SECTION
@@ -216,6 +216,7 @@ const getInTouch = {
 	email: "ferrak.anass@gmail.com",
 };
 
+// Coming Soon
 // Blog SECTION
 // const blog = {
 //   show: false,
