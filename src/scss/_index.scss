@@ -136,3 +136,9 @@ code {
 	font-family: monospace;
 	padding: 0;
 }
+
+.collapseStyle {
+	@media (min-width: 768px) {
+		display: flex;
+	}
+}

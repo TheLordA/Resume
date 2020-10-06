@@ -56,7 +56,7 @@ const about = {
 	imageLink: require("../editable-stuff/anassFerrak.png"),
 	imageSize: 375,
 	message:
-		"My name is Ferrak Anass . I’m a graduate of 2020 from National Higher School of Informatics and Systems Analysis (ENSIAS) at Rabat, Morocco with a degree in Computer Engineering specialist in Web Engineering and Mobile Computing. I see myself as a FullStack JS Engineer and Web Developer. In my free time I like working on open source projects and learning new things. ",
+		"My name is Ferrak Anass known as @TheLordA. I’m a graduate of 2020 from National Higher School of Informatics and Systems Analysis (ENSIAS) at Rabat, Morocco with a degree in Computer Engineering specialist in Web Engineering and Mobile Computing. I see myself as a FullStack JS Engineer and Web Developer. In my free time I like working on open source projects and learning new things. ",
 	resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -95,14 +95,105 @@ const skills = {
 	show: true,
 	heading: "Skills",
 	hardSkills: [
-		{ name: "Python", value: 90 },
-		{ name: "SQL", value: 75 },
-		{ name: "Data Structures", value: 85 },
-		{ name: "C/C++", value: 65 },
-		{ name: "JavaScript", value: 90 },
-		{ name: "React", value: 65 },
-		{ name: "HTML/CSS", value: 55 },
-		{ name: "C#", value: 80 },
+		// Programming Languages
+		{
+			type: "Programming Languages",
+			value: [
+				{ name: "Javascript", value: 90 },
+				{ name: "Go", value: 65 },
+				{ name: "Python", value: 65 },
+				{ name: "Java", value: 75 },
+			],
+		},
+		// Web Development
+		{
+			type: "Web Development",
+			value: [
+				{ name: "React.js", value: 90 },
+				{ name: "Next.js", value: 25 },
+				{ name: "Node.js", value: 85 },
+				{ name: "Express.js", value: 85 },
+				{ name: "Nest.js", value: 20 },
+				{ name: "Java EE (JSF, JSP)", value: 45 },
+				{ name: "Spring FrameWork", value: 50 },
+			],
+		},
+		// Mobile Development
+		{
+			type: "Mobile Development",
+			value: [
+				{ name: "ReactNative", value: 75 },
+				{ name: "Android ( Kotlin )", value: 35 },
+				{ name: "Android ( Java )", value: 80 },
+			],
+		},
+		// DevOps
+		{
+			type: "DevOps",
+			value: [
+				{ name: "Git", value: 90 },
+				{ name: "GitHub", value: 85 },
+				{ name: "GitLab", value: 85 },
+				{ name: "Jenkins", value: 65 },
+				{ name: "Docker", value: 55 },
+				{ name: "Kubernetes", value: 55 },
+			],
+		},
+		// DataBases
+		{
+			type: "DataBases",
+			value: [
+				{ name: "MongoDB", value: 90 },
+				{ name: "MySQL", value: 90 },
+				{ name: "Postgresql", value: 80 },
+				{ name: "Oracle", value: 55 },
+				{ name: "SQL Server", value: 45 },
+				{ name: "FireBase Databases ( Real-time Database, Cloud Firestore )", value: 75 },
+			],
+		},
+		// Web Services
+		{
+			type: "Web Services",
+			value: [
+				{ name: "REST", value: 90 },
+				{ name: "GraphQL", value: 75 },
+				{ name: "WebSockets", value: 85 },
+			],
+		},
+		// Testing & QA
+		{
+			type: "Testing & QA",
+			value: [
+				{ name: "SonarQube", value: 70 },
+				{ name: "PostMan", value: 85 },
+				{ name: "Mocha & Chai", value: 55 },
+				{ name: "Jest", value: 45 },
+				{ name: "BugZilla", value: 60 },
+				{ name: "Espresso", value: 35 },
+				{ name: "JUnit", value: 40 },
+				{ name: "Selenium", value: 45 },
+				{ name: "JUnit", value: 40 },
+				{ name: "JArchitect", value: 35 },
+			],
+		},
+		// Cloud Platforms
+		{
+			type: "Cloud Platforms",
+			value: [
+				{ name: "Google Cloud Platform", value: 75 },
+				{ name: "Microsoft Azure", value: 70 },
+				{ name: "Amazon Web Services", value: 55 },
+			],
+		},
+		// Systems Administrations
+		{
+			type: "Systems Administrations",
+
+			value: [
+				{ name: "Linux (Ubuntu/CentOs)", value: 65 },
+				{ name: "Windows", value: 65 },
+			],
+		},
 	],
 	softSkills: [
 		{ name: "Goal-Oriented", value: 80 },
