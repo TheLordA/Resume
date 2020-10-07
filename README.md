@@ -4,26 +4,19 @@
   <h1 align="center">Developer's Portfolio ✨</h1>
 
   <p align="center">
-    It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects. Site URL / Demo: 
-    <a href="https://hashirshoaeb.github.io">hashirshoaeb.github.io</a>
+    It is a personal static website/portfolio hosted with GitHub Pages, built to showcase my recent projects. Site URL / Demo: 
+    <a href="https://thelorda.github.io/resume/">thelorda.github.io/resume/</a>
     <br />
     <br />
-    <a href="https://hashirshoaeb.com">About Me</a>
+    <a href="https://thelorda.github.io/resume/">About Me</a>
     ·
-    <a href="https://github.com/hashirshoaeb/home/issues">Report Bug</a>
+    <a href="https://github.com/thelorda/resume/issues">Report Bug</a>
     ·
-    <a href="https://github.com/hashirshoaeb/home/issues">Request Feature</a>
+    <a href="https://github.com/thelorda/resume/issues">Request Feature</a>
   </p>
 </p>
 
-![GitHub contributors](https://img.shields.io/github/contributors/hashirshoaeb/home?color=ffcc66&style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/hashirshoaeb/home?color=ffcc66&style=for-the-badge)
-[![GitHub forks](https://img.shields.io/github/forks/hashirshoaeb/home?style=for-the-badge)](https://github.com/hashirshoaeb/star_book/network)
-[![GitHub issues](https://img.shields.io/github/issues/hashirshoaeb/home?color=ffcc66&style=for-the-badge)](https://github.com/hashirshoaeb/star_book/issues)
-[![GitHub license](https://img.shields.io/github/license/hashirshoaeb/home?style=for-the-badge)](https://github.com/hashirshoaeb/home/blob/master/LICENSE)
-[![Twitter Follow](https://img.shields.io/twitter/follow/hashirshoaeb?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/hashirshoaeb)
-
-[![Site preview](/public/social-image.png)](https://hashirshoaeb.github.io/)
+[![Site preview](/public/social-image.png)](https://thelorda.github.io/resume/)
 
 ## Table of Contents
 
@@ -35,8 +28,6 @@
 - [Contributing 🙌](#contributing-)
 - [Issues](#issues)
 - [Upcoming Features / Improvements 🔗](#upcoming-features-/-improvements-)
-- [Showcase 🚀](#showcase-)
-- [Versão em Português :brazil:](#versao-em-portugues-)
 
 ## Technology Stack 🛠️
 
@@ -128,7 +119,7 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
     
    Next time if you make changes, repeat from step 8.
 
-Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
+Facing issues? Feel free to contact at ferrak.anass@gmail.com.
 
 ## Contributing 🙌
 
@@ -151,71 +142,3 @@ If anyone is looking to make some contribution, the following are issues that yo
 - [x] If the Number of Projects are zero, hide the heading (Recent Projects).
 - [ ] Blogs page.
 - [ ] Make resume optional.
-
-## Showcase 🚀
-
-Have you changed something in the code to create your own version? Feel free to share with me, I will list them in this space.
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/justiceserv/justiceserv.github.io">
-        <img src="READMEdocs/justiceserv-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Guhyun Chung</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/hamzasohail0/home/">
-        <img src="READMEdocs/hamzasohail0-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Hamza Sohail</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/AymunTariq/home/">
-        <img src="READMEdocs/aymuntariq-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Aymun Tariq</b></sub>
-      </a>
-      <br />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ishaan-m/home/">
-        <img src="READMEdocs/ishaan-m-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Ishaan Manudhane</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/meenams/home/">
-        <img src="READMEdocs/meenams-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Meena Muthusubramanian</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/remimestdagh/home/">
-        <img src="READMEdocs/remimestdagh-github-io-home.gif" width="300px" alt="" />
-        <br />
-        <sub><b>Remi Mestdagh</b></sub>
-      </a>
-      <br />
-    </td>
-  </tr>
-</table>
-
-## Versão em Português :brazil:
-
-Esse projeto foi traduzido para português! Se você gostou dele e quer criar a sua própria versão, confira o repositório do [@tashima42](https://github.com/tashima42) em [https://github.com/Tashima42/home](https://github.com/Tashima42/home).
-Novas contribuições e revisões na tradução são muito bem vindas!
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/hashirshoaeb/home.svg)](https://starchart.cc/hashirshoaeb/home)
