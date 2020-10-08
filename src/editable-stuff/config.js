@@ -56,7 +56,7 @@ const about = {
 	imageLink: require("../editable-stuff/anassFerrak.png"),
 	imageSize: 375,
 	message:
-		"My name is Ferrak Anass known as @TheLordA. I’m a graduate of 2020 from National Higher School of Informatics and Systems Analysis (ENSIAS) at Rabat, Morocco with a degree in Computer Engineering specialist in Web Engineering and Mobile Computing. I see myself as a FullStack JS Engineer and Web Developer. In my free time I like working on open source projects and learning new things. ",
+		"Ferrak Anas, known as @TheLordA, I'm a 2020 graduate of the Moroccan National Higher School for Computer Science of Rabat. I hold a degree in Web Engineering and Mobile Computing. I'm very passionate and motivated to fulfill my dream to become a FullStack JS Engineer And Web Developer. In my free time, I love to keep brushing up my skills and to work on open source projects.",
 	resume: require("../editable-stuff/resume(French).pdf"),
 };
 
