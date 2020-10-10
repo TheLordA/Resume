@@ -212,7 +212,7 @@ const getInTouch = {
 	show: true,
 	heading: "Get In Touch",
 	message:
-		"I'm currently looking for full-time Software Engineering / FullStack JS Developer opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+		"I'm currently looking for a full time software engineering/fullstack Js developer job opportunity. If you have any job positions available or if you have any questions regarding my profile your are more than welcome to message me. Please feel free to email me anytime at",
 	email: "ferrak.anass@gmail.com",
 };
 
