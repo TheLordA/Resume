@@ -1,6 +1,4 @@
 import React from "react";
-import Pdf from "../../editable-stuff/resume(French).pdf";
-
 import axios from "axios";
 
 const pictureLinkRegex = new RegExp(
