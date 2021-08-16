@@ -28,9 +28,9 @@ const NavBar = () => {
 	return (
 		<Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
 			<Container>
-				<Navbar.Brand href="/">
+				{/* <Navbar.Brand href="/">
 					<img src={logo} className="img-fluid logo" alt="brand" />
-				</Navbar.Brand>
+				</Navbar.Brand> */}
 				<Navbar.Toggle
 					aria-controls="responsive-navbar-nav"
 					onClick={() => {
