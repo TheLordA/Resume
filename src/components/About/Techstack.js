@@ -1,41 +1,69 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import { DiJavascript1, DiReact, DiNodejs, DiMongodb, DiPython, DiGit } from "react-icons/di";
-import { SiPytorch, SiTensorflow, SiFirebase } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+//import { GrGolang } from "react-icons/gr";
+import {
+	DiJavascript1,
+	DiReact,
+	DiNodejs,
+	DiMongodb,
+	DiPython,
+	DiGit,
+	DiJenkins,
+	DiDocker,
+	DiAndroid,
+} from "react-icons/di";
+import { SiPostgresql, SiSpring, SiFirebase, SiKubernetes } from "react-icons/si";
 
 const Techstack = () => {
 	return (
 		<Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+			{/* Programming languages */}
 			<Col xs={4} md={2} className="tech-icons">
-				<CgCPlusPlus />
+				<FaJava />
 			</Col>
 			<Col xs={4} md={2} className="tech-icons">
 				<DiJavascript1 />
 			</Col>
 			<Col xs={4} md={2} className="tech-icons">
-				<DiNodejs />
+				<DiPython />
 			</Col>
+			{/* Frameworks */}
 			<Col xs={4} md={2} className="tech-icons">
 				<DiReact />
 			</Col>
 			<Col xs={4} md={2} className="tech-icons">
+				<DiNodejs />
+			</Col>
+			<Col xs={4} md={2} className="tech-icons">
+				<SiSpring />
+			</Col>
+			<Col xs={4} md={2} className="tech-icons">
+				<DiAndroid />
+			</Col>
+
+			{/* DB */}
+			<Col xs={4} md={2} className="tech-icons">
 				<DiMongodb />
 			</Col>
 			<Col xs={4} md={2} className="tech-icons">
-				<DiPython />
+				<SiPostgresql />
 			</Col>
 			<Col xs={4} md={2} className="tech-icons">
-				<SiPytorch />
+				<SiFirebase />
 			</Col>
-			<Col xs={4} md={2} className="tech-icons">
-				<SiTensorflow />
-			</Col>
+			{/* DevOps */}
 			<Col xs={4} md={2} className="tech-icons">
 				<DiGit />
 			</Col>
 			<Col xs={4} md={2} className="tech-icons">
-				<SiFirebase />
+				<DiJenkins />
+			</Col>
+			<Col xs={4} md={2} className="tech-icons">
+				<DiDocker />
+			</Col>
+			<Col xs={4} md={2} className="tech-icons">
+				<SiKubernetes />
 			</Col>
 		</Row>
 	);

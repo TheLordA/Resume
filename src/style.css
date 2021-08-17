@@ -435,7 +435,9 @@ html {
 }
 
 .blockquote-footer {
+	margin-top: 0.1em !important;
 	color: #a588c0 !important;
+	font-size: 1.25em !important;
 }
 /* --------- */
 /* Projects */
@@ -540,7 +542,7 @@ html {
 
 .about-section {
 	position: relative !important;
-	padding-top: 150px !important;
+	padding-top: 70px !important;
 	padding-bottom: 30px !important;
 	background-image: var(--section-background-color) !important;
 	color: white !important;

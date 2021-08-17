@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import Img from "../../Assets/about.svg";
 import Toolstack from "./Toolstack";
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
 			<Container>
 				<Row style={{ justifyContent: "center", padding: "10px" }}>
 					<Col
-						md={7}
+						md={6}
 						style={{
 							justifyContent: "center",
 							paddingTop: "30px",
@@ -27,11 +27,23 @@ const About = () => {
 						<Aboutcard />
 					</Col>
 					<Col
-						md={5}
+						md={6}
 						style={{ paddingTop: "120px", paddingBottom: "50px" }}
 						className="about-img"
 					>
-						<img src={laptopImg} alt="about" className="img-fluid" />
+						<img src={Img} alt="about" className="img-fluid" />
+						<p
+							style={{
+								marginBlockEnd: 0,
+								color: "rgb(155 126 172)",
+								marginTop: "1rem",
+								fontSize: "1.25rem",
+								fontWeight: "bold",
+							}}
+						>
+							"Strive to build things that make a true difference !"{" "}
+						</p>
+						<footer className="blockquote-footer">@TheLordA</footer>
 					</Col>
 				</Row>
 				<h1 className="project-heading">
