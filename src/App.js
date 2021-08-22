@@ -1,83 +1,46 @@
-import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { navBar, mainBody, about, repos, leadership, skills, getInTouch } from "./editable-stuff/config.js";
-import MainBody from "./components/home/MainBody";
-import AboutMe from "./components/home/AboutMe";
-import Project from "./components/home/Project";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Skills from "./components/home/Skills";
-// import { Blog } from "./components/blog/Blog";
-// import BlogPost from "./components/blog/BlogPost";
-import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const Home = React.forwardRef((props, ref) => {
-	return (
-		<>
-			<MainBody
-				gradient={mainBody.gradientColors}
-				title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-				message={mainBody.message}
-				icons={mainBody.icons}
-				ref={ref}
-				letterCrap={mainBody.letterCrap}
-			/>
-			{about.show && (
-				<AboutMe
-					heading={about.heading}
-					message={about.message}
-					link={about.imageLink}
-					imgSize={about.imageSize}
-					resume={about.resume}
-				/>
-			)}
-			{repos.show && (
-				<Project
-					heading={repos.heading}
-					username={repos.gitHubUsername}
-					length={repos.reposLength}
-					specfic={repos.specificRepos}
-				/>
-			)}
-			{leadership.show && (
-				<Leadership
-					heading={leadership.heading}
-					message={leadership.message}
-					img={leadership.images}
-					imageSize={leadership.imageSize}
-				/>
-			)}
-			{skills.show && (
-				<Skills
-					heading={skills.heading}
-					hardSkills={skills.hardSkills}
-					softSkills={skills.softSkills}
-				/>
-			)}
-		</>
-	);
-});
+import Preloader from "../src/components/Pre";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume/Resume";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import "./style.css";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
-	const titleRef = React.useRef();
+	const [load, updateLoad] = useState(true);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			updateLoad(false);
+		}, 1200);
+
+		return () => clearTimeout(timer);
+	}, []);
 
 	return (
-		<BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-			{navBar.show && <Navbar ref={titleRef} />}
-			<Route path="/" exact component={() => <Home ref={titleRef} />} />
-			{/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
-			<Footer>
-				{getInTouch.show && (
-					<GetInTouch
-						heading={getInTouch.heading}
-						message={getInTouch.message}
-						email={getInTouch.email}
-					/>
-				)}
-			</Footer>
-		</BrowserRouter>
+		<Router>
+			<Preloader load={load} />
+			<div className="App" id={load ? "no-scroll" : "scroll"}>
+				<Navbar />
+				<ScrollToTop />
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/project" component={Projects} />
+					<Route path="/about" component={About} />
+					<Route path="/resume" component={Resume} />
+				</Switch>
+				<Footer />
+			</div>
+		</Router>
 	);
 };
 
