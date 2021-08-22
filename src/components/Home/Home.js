@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-illus.svg";
-//import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -9,7 +8,6 @@ const Home = () => {
 	return (
 		<section>
 			<Container fluid className="home-section" id="home">
-				{/* <Particle /> */}
 				<Container className="home-content">
 					<Row>
 						<Col md={6} className="home-header">

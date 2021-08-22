@@ -15,7 +15,7 @@ const AboutCard = () => {
 						I'm a 2020 graduate of the Moroccan National Higher School for Computer Science
 						of Rabat. I hold an Engineering degree in Web Engineering and Mobile Computing.
 						<br />
-						Apart from coding, some other activities that I love to do !!
+						Besides coding, some activities that I love to do !!
 					</p>
 					<ul>
 						<li className="about-activity">

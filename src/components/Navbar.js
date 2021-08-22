@@ -26,7 +26,7 @@ const NavBar = () => {
 		<Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
 			<Container>
 				<Navbar.Brand href="/" className="logoType" alt="brand">
-					{"< @ TheLordA />"}
+					{"< TheLordA />"}
 				</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls="responsive-navbar-nav"

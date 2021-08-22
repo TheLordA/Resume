@@ -11,33 +11,23 @@ const Home2 = () => {
 		<Container fluid className="home-about-section" id="about">
 			<Container>
 				<Row>
-					<Col md={5} className="myAvtar">
-						<Tilt>
-							<img src={myImg} className="img-fluid" alt="avatar" />
-						</Tilt>
-					</Col>
 					<Col md={7} className="home-about-description">
 						<h1 style={{ fontSize: "2.6em" }}>
 							LET ME <span className="purple"> INTRODUCE </span> MYSELF
 						</h1>
 						<p className="home-about-body">
-							I fell in love with programming and I have at least learnt something, I
-							think… 🤷‍♂️
+							I fell in love with programming within I have at least learned something
+							new every day, I think… 🤷‍♂️
 							<br />
 							<br />I am fluent in classics like
 							<i>
-								<b className="purple"> C++, Javascript and Python. </b>
+								<b className="purple"> Javascript, Java, and Python. </b>
 							</i>
 							<br />
 							<br />
-							My field of Interest's are building new &nbsp;
-							<i>
-								<b className="purple">Web Technologies and Products </b> and also in
-								areas related to{" "}
-								<b className="purple">
-									Deep Learning and Natural Launguage Processing.
-								</b>
-							</i>
+							Things that I feel comfortable in are{" "}
+							<b className="purple">building new apps/features from scratch with </b>
+							<b className="purple"> a personnel touch in it, </b> because why not 💪.
 							<br />
 							<br />
 							Whenever possible, I also apply my passion for developing products with{" "}
@@ -47,17 +37,26 @@ const Home2 = () => {
 							</i>
 							&nbsp; like
 							<i>
-								<b className="purple"> React.js ans Next.js</b>
+								<b className="purple"> React.js</b> and{" "}
+								<b className="purple"> ReactNative</b>
 							</i>
 						</p>
 					</Col>
+					<Col md={5} className="myAvtar">
+						<Tilt>
+							<img src={myImg} className="img-fluid" alt="avatar" />
+						</Tilt>
+					</Col>
 				</Row>
-				<Row>
-					<Col md={7} className="home-about-social">
+				<Row style={{ marginTop: "70px" }}>
+					<Col md={6}>
+						<Tilt>
+							<img src={messaging} className="img-fluid" alt="avatar" />
+						</Tilt>
+					</Col>
+					<Col md={6} className="home-about-social">
 						<h1>FIND ME ON</h1>
-						<p>
-							Feel free to <span className="purple">connect </span>with me
-						</p>
+
 						<ul className="home-about-social-links">
 							<li className="social-icons">
 								<a
@@ -67,16 +66,6 @@ const Home2 = () => {
 									className="icon-colour  home-social-icons"
 								>
 									<AiFillGithub />
-								</a>
-							</li>
-							<li className="social-icons">
-								<a
-									href="https://twitter.com/#"
-									target="_blank"
-									rel="noreferrer"
-									className="icon-colour  home-social-icons"
-								>
-									<AiOutlineTwitter />
 								</a>
 							</li>
 							<li className="social-icons">
@@ -91,6 +80,17 @@ const Home2 = () => {
 							</li>
 							<li className="social-icons">
 								<a
+									href="https://twitter.com/#"
+									target="_blank"
+									rel="noreferrer"
+									className="icon-colour  home-social-icons"
+								>
+									<AiOutlineTwitter />
+								</a>
+							</li>
+
+							<li className="social-icons">
+								<a
 									href="https://www.instagram.com/#"
 									target="_blank"
 									rel="noreferrer"
@@ -100,11 +100,9 @@ const Home2 = () => {
 								</a>
 							</li>
 						</ul>
-					</Col>
-					<Col md={5}>
-						<Tilt>
-							<img src={messaging} className="img-fluid" alt="avatar" />
-						</Tilt>
+						<p>
+							Feel free to <span className="purple">connect </span>with me
+						</p>
 					</Col>
 				</Row>
 			</Container>

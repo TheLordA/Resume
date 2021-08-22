@@ -256,6 +256,7 @@ html {
 
 .home-section {
 	position: relative;
+	height: 100vh;
 	z-index: -1;
 	background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
 	background-position: top center;
@@ -320,7 +321,7 @@ html {
 .home-about-section {
 	position: relative;
 	padding-bottom: 70px !important;
-	padding-top: 70px !important;
+	padding-top: 0px !important;
 }
 
 .home-about-description {
