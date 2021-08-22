@@ -1,86 +1,112 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-//import Particle from "../Particle";
-import Resumecontent from "./ResumeContent";
-import pdf from "../../Assets/resume(French).pdf";
 import { AiOutlineDownload } from "react-icons/ai";
+//import Particle from "../Particle";
+import workSpace from "../../Assets/about.svg";
+import work from "../../Assets/workspace.svg";
+import ResumeContent from "./ResumeContent";
+import pdf from "../../Assets/resume(French).pdf";
 
 const Resume = () => {
-	const [spojRank, upadteSpojRank] = useState(0);
-	const [hackerrank, upadteHackerank] = useState(0);
-	const [sem, upadateSem] = useState(0);
-	const [cgpa, upadteCgpa] = useState(0);
-
 	return (
 		<Container fluid className="resume-section">
 			{/* <Particle /> */}
 			<Container>
-				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Button variant="primary" href={pdf} target="_blank">
+				<Row style={{ justifyContent: "center", position: "relative", width: "100%" }}>
+					<Button
+						variant="primary"
+						href={pdf}
+						target="_blank"
+						style={{ width: " fit-content" }}
+					>
 						<AiOutlineDownload />
-						&nbsp;Download CV
+						&nbsp;Download CV (French version)
 					</Button>
 				</Row>
 				<Row className="resume">
 					<Col md={6} className="resume-left">
-						<h3 className="resume-title">Experience</h3>
-						<Resumecontent
+						<h3 className="resume-title">Experiences</h3>
+						<img
+							src={workSpace}
+							alt="experiences"
+							className="img-fluid"
+							style={{ marginBottom: "30px" }}
+						/>
+						<ResumeContent
 							title="
-                            Do dolor adipisicing aute sunt adipisicing deserunt velit ."
-							date="June 2020 - August 2020"
+                            Junior FullStack Software Engineer"
+							date="May 2021 - Present"
 							content={[
-								"Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-								" Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
+								"Involved in the customization and improvement of the PowerCard solution.",
 							]}
 						/>
-						<h3 className="resume-title">Extracurricular Activities</h3>
-						<Resumecontent
-							title="Ullamco excepteur nisi amet cillum."
+						<ResumeContent
+							title="
+                            Junior FullStack JS Developer/Engineer"
+							date="Jul 2019 - Apr 2019"
 							content={[
-								"Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
+								"Head of the team that develops the new evolution of the E-learning platforms at the Moroccan market, that focus more on the right way of learning and how it should be done by making it easier, funnier for the students instead of frustrating them.",
+								"Upgrade, Improvement, and Maintenance of the internal platforms of the company .",
 							]}
+							tools={{
+								exist: true,
+								dev: "Node.js ( ExpressJS ), React.js, MongoDB, WebRTC.",
+								devOps: "Jenkins Docker, Kubernetes.",
+								QA: "SonarQube, Mocha, Chai, Jest.",
+							}}
 						/>
-						<Resumecontent
-							title="Tempor cillum qui dolore elit."
+						<ResumeContent
+							title="
+                            FullStack Developer Intern"
+							date="Jul 2018 - Aug 2018"
 							content={[
-								"Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
+								"Developing an HR platform to bring together job offers and requests and/or internships",
 							]}
+							tools={{
+								exist: true,
+								dev: "Java, Spring Framework (Spring Security, Spring Boot),React.js, MySql, Rest API, IntellijIdea, VS Code.",
+							}}
+						/>
+						<ResumeContent
+							title="
+                            FullStack Developer Intern"
+							date="Jul 2020 - Apr 2021"
+							content={[
+								"Developing a booking platform on behalf of a traveling company. ",
+							]}
+							tools={{
+								exist: true,
+								dev: "Java, Spring Framework ( Spring Boot, Spring Security ),React.js, MySql, UX/UI design (Practices), VSCode.",
+							}}
 						/>
 					</Col>
 					<Col md={6} className="resume-right">
 						<h3 className="resume-title">Education</h3>
-						<Resumecontent
-							title="Mollit anim nostrud id duis elit tempor non exercitation ut ullamco officia est proident."
-							date="2018 - Present"
-							content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+						<img
+							src={work}
+							alt="home pic"
+							className="img-fluid"
+							style={{ marginBottom: "30px" }}
 						/>
-						<Resumecontent
-							title="Sit non enim excepteur consectetur laboris aute quis laborum ut minim."
-							date="2015 - 2017"
-							content={["Precentage: 88%"]}
+						<ResumeContent
+							title="Moroccan National Higher School for Computer Science of Rabat"
+							date="2017 - 2020"
+							content={["Engineering Degree in Web Engineering and Mobile Computing"]}
 						/>
-						<Resumecontent
-							title="Qui anim ad proident duis veniam laboris minim minim consectetur cillum sit reprehenderit adipisicing."
-							date="2005 - 2015"
-							content={["Precentage: 86%"]}
-						/>
-						<h3 className="resume-title">Ranks and Achivements</h3>
-						<Resumecontent
-							title=""
-							content={[
-								`Current rank in Spoj ${spojRank}`,
-								`Current rank in HackerRank  ${hackerrank}`,
-								"Top Performer in Code-Break 1.0",
-								"Participant in Hack-A-Bit 2019",
-							]}
-						/>
+						<ResumeContent title="MPSI/MP Preparatory classes" date="2014 - 2017" />
+						<ResumeContent title="bachelor's degree in mathematical science" date="2014" />
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Button variant="primary" href={pdf} target="_blank">
+					<Button
+						variant="primary"
+						href={pdf}
+						target="_blank"
+						style={{ width: " fit-content" }}
+					>
 						<AiOutlineDownload />
-						&nbsp;Download CV
+						&nbsp;Download CV (French version)
 					</Button>
 				</Row>
 			</Container>
