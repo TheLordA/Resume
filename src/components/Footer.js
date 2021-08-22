@@ -10,10 +10,14 @@ const Footer = () => {
 		<Container fluid className="footer">
 			<Row>
 				<Col md="4" className="footer-copywright">
-					<h3>Designed and Developed by Ferrak Anass</h3>
+					<h3>
+						Designed and Developed by <strong className="purple">Ferrak Anass</strong>
+					</h3>
 				</Col>
 				<Col md="4" className="footer-copywright">
-					<h3>Copyright © {year} TheLordA</h3>
+					<h3>
+						Copyright © {year} <strong className="purple">TheLordA</strong>
+					</h3>
 				</Col>
 				<Col md="4" className="footer-body">
 					<ul className="footer-icons">
