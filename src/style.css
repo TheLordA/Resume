@@ -134,6 +134,9 @@ html {
 }
 
 @media (max-width: 767px) {
+	.logoType {
+		display: none;
+	}
 	.navbar {
 		padding: 1rem 2rem !important;
 		font-size: 1.4rem !important;
