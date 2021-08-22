@@ -1,10 +1,16 @@
 import React, { Fragment } from "react";
 
 const ResumeContent = (props) => {
-	const { title, date, content, tools } = props;
+	const { title, company, date, content, tools } = props;
 	return (
 		<div className="resume-item">
 			<h5 className={title ? "resume-title" : "resume-no-title"}>{title}</h5>
+			{company ? (
+				<p>
+					<em>{company}</em>
+				</p>
+			) : null}
+
 			<p>
 				<em>{date}</em>
 			</p>

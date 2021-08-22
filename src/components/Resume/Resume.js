@@ -36,6 +36,7 @@ const Resume = () => {
 						<ResumeContent
 							title="
                             Junior FullStack Software Engineer"
+							company="Hightech Payment Systems ( HPS World Wide )"
 							date="May 2021 - Present"
 							content={[
 								"Involved in the customization and improvement of the PowerCard solution.",
@@ -44,6 +45,7 @@ const Resume = () => {
 						<ResumeContent
 							title="
                             Junior FullStack JS Developer/Engineer"
+							company="KEPLER Agency"
 							date="Jul 2019 - Apr 2019"
 							content={[
 								"Head of the team that develops the new evolution of the E-learning platforms at the Moroccan market, that focus more on the right way of learning and how it should be done by making it easier, funnier for the students instead of frustrating them.",
@@ -59,6 +61,7 @@ const Resume = () => {
 						<ResumeContent
 							title="
                             FullStack Developer Intern"
+							company="IntellCap"
 							date="Jul 2018 - Aug 2018"
 							content={[
 								"Developing an HR platform to bring together job offers and requests and/or internships",
@@ -71,6 +74,7 @@ const Resume = () => {
 						<ResumeContent
 							title="
                             FullStack Developer Intern"
+							company="DATAEmbassy"
 							date="Jul 2020 - Apr 2021"
 							content={[
 								"Developing a booking platform on behalf of a traveling company. ",
