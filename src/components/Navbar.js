@@ -25,7 +25,7 @@ const NavBar = () => {
 	return (
 		<Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
 			<Container>
-				<Navbar.Brand href="/Resume" className="logoType" alt="brand">
+				<Navbar.Brand href="/resume" className="logoType" alt="brand">
 					{"< TheLordA />"}
 				</Navbar.Brand>
 				<Navbar.Toggle
@@ -41,7 +41,7 @@ const NavBar = () => {
 				<Navbar.Collapse id="responsive-navbar-nav" style={{ flexDirection: " row-reverse" }}>
 					<Nav className="ml-auto" defaultActiveKey="#home">
 						<Nav.Item>
-							<Nav.Link as={Link} to="/Resume" onClick={() => updateExpanded(false)}>
+							<Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
 								<AiOutlineHome style={{ marginBottom: "2px" }} /> Home
 							</Nav.Link>
 						</Nav.Item>
@@ -49,7 +49,7 @@ const NavBar = () => {
 						<Nav.Item>
 							<Nav.Link
 								as={Link}
-								to="/Resume/about"
+								to="/resume/about"
 								onClick={() => updateExpanded(false)}
 							>
 								<AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -59,7 +59,7 @@ const NavBar = () => {
 						<Nav.Item>
 							<Nav.Link
 								as={Link}
-								to="/Resume/project"
+								to="/resume/project"
 								onClick={() => updateExpanded(false)}
 							>
 								<AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
@@ -68,7 +68,7 @@ const NavBar = () => {
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link as={Link} to="/Resume/cv" onClick={() => updateExpanded(false)}>
+							<Nav.Link as={Link} to="/resume/cv" onClick={() => updateExpanded(false)}>
 								<CgFileDocument style={{ marginBottom: "2px" }} /> Resume
 							</Nav.Link>
 						</Nav.Item>
@@ -85,7 +85,7 @@ const NavBar = () => {
 
 						<Nav.Item className="fork-btn">
 							<Button
-								href="https://github.com/thelorda/Resume/"
+								href="https://github.com/thelorda/resume/"
 								target="_blank"
 								className="fork-btn-inner"
 							>
