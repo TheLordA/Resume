@@ -25,7 +25,7 @@ const NavBar = () => {
 	return (
 		<Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
 			<Container>
-				<Navbar.Brand href="/" className="logoType" alt="brand">
+				<Navbar.Brand href="/Resume" className="logoType" alt="brand">
 					{"< TheLordA />"}
 				</Navbar.Brand>
 				<Navbar.Toggle
@@ -41,26 +41,34 @@ const NavBar = () => {
 				<Navbar.Collapse id="responsive-navbar-nav" style={{ flexDirection: " row-reverse" }}>
 					<Nav className="ml-auto" defaultActiveKey="#home">
 						<Nav.Item>
-							<Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+							<Nav.Link as={Link} to="/Resume" onClick={() => updateExpanded(false)}>
 								<AiOutlineHome style={{ marginBottom: "2px" }} /> Home
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
+							<Nav.Link
+								as={Link}
+								to="/Resume/about"
+								onClick={() => updateExpanded(false)}
+							>
 								<AiOutlineUser style={{ marginBottom: "2px" }} /> About
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
+							<Nav.Link
+								as={Link}
+								to="/Resume/project"
+								onClick={() => updateExpanded(false)}
+							>
 								<AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
 								Projects
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link as={Link} to="/cv" onClick={() => updateExpanded(false)}>
+							<Nav.Link as={Link} to="/Resume/cv" onClick={() => updateExpanded(false)}>
 								<CgFileDocument style={{ marginBottom: "2px" }} /> Resume
 							</Nav.Link>
 						</Nav.Item>
@@ -77,7 +85,7 @@ const NavBar = () => {
 
 						<Nav.Item className="fork-btn">
 							<Button
-								href="https://github.com/thelorda/resume/"
+								href="https://github.com/thelorda/Resume/"
 								target="_blank"
 								className="fork-btn-inner"
 							>

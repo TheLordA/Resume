@@ -33,10 +33,10 @@ const App = () => {
 				<Navbar />
 				<ScrollToTop />
 				<Switch>
-					<Route path="/resume/" exact component={Home} />
-					<Route path="/resume/project" component={Projects} />
-					<Route path="/resume/about" component={About} />
-					<Route path="/resume/cv" component={Resume} />
+					<Route path="/Resume" exact component={Home} />
+					<Route path="/Resume/project" component={Projects} />
+					<Route path="/Resume/about" component={About} />
+					<Route path="/Resume/cv" component={Resume} />
 				</Switch>
 				<Footer />
 			</div>
