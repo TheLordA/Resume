@@ -35,7 +35,7 @@ const Resume = () => {
 						/>
 						<ResumeContent
 							title="
-                            Junior FullStack Software Engineer"
+                           FullStack Software Engineer"
 							company="Hightech Payment Systems ( HPS World Wide )"
 							date="May 2021 - Present"
 							content={[
@@ -44,7 +44,7 @@ const Resume = () => {
 						/>
 						<ResumeContent
 							title="
-                            Junior FullStack JS Developer/Engineer"
+                           FullStack JS Developer/Engineer"
 							company="KEPLER Agency"
 							date="Jul 2019 - Apr 2019"
 							content={[

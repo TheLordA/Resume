@@ -92,8 +92,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Upcoming Features / Improvements 🔗
 
--    [ ] Improve website performance.
--    [ ] Improve website SEO.
+-    [ ] Improve performances.
 -    [ ] Deep code refactoring.
 -    [ ] Improve UI (Desktop & mobile).
 -    [ ] Add Terminal UI.
