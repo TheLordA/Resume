@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
+import Terminal from "./pages/Terminal";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -37,6 +38,7 @@ const App = () => {
 					<Route path="/resume/project" component={Projects} />
 					<Route path="/resume/about" component={About} />
 					<Route path="/resume/cv" component={Resume} />
+					<Route path="/resume/terminal" component={Terminal} />
 				</Switch>
 				<Footer />
 			</div>
