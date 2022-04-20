@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from "react";
 
 import Line from "../components/Terminal UI/Line";
@@ -46,9 +47,7 @@ const Terminal = () => {
 		],
 	};
 
-	const [displayEverything, setDisplayEverything] = useState([
-		{ value: "", id: 0, displayInput: true, type: "line" },
-	]);
+	const [displayEverything, setDisplayEverything] = useState([{ value: "", id: 0, displayInput: true, type: "line" }]);
 
 	const handelWhatever = (string_value, Tid) => {
 		let res = string_value.split(" ");
@@ -60,30 +59,17 @@ const Terminal = () => {
 			// Add the line with the cmd
 			displayEverything.push({ value: string_value, id: Tid, type: res[0] });
 			// Adding a new line after a click
-			setDisplayEverything([
-				...displayEverything,
-				{ value: "", id: displayEverything.length + 1, displayInput: true, type: "line" },
-			]);
+			setDisplayEverything([...displayEverything, { value: "", id: displayEverything.length + 1, displayInput: true, type: "line" }]);
 		}
 	};
 
 	return (
 		<div className="container">
 			<div className="terminal">
-				<p className="prompt">
-					Hey there! Welcome to the Terminal UI version of TheLordA's resume. For basic
-					commands type cmd
-				</p>
+				<p className="prompt">Hey there! Welcome to the Terminal UI version of TheLordA's resume. For basic commands type cmd</p>
 				{displayEverything.map((l) => {
 					if (l.type === "line") {
-						return (
-							<Line
-								key={l.id}
-								handelWhatever={handelWhatever}
-								line={l}
-								displayInput={l.displayInput}
-							></Line>
-						);
+						return <Line key={l.id} handelWhatever={handelWhatever} line={l} displayInput={l.displayInput}></Line>;
 					} else if (l.type === "ls") {
 						return <Ls key={l.id} line={l} subDir={information.subDir}></Ls>;
 					} else if (l.type === "cmd") {
