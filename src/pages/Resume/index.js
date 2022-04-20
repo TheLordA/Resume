@@ -1,12 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
 //import Particle from "../Particle";
-import workSpace from "../../Assets/about.svg";
-import work from "../../Assets/workspace.svg";
+import workSpace from "@assets/images/about.svg";
+import work from "@assets/images/workspace.svg";
 import ResumeContent from "./ResumeContent";
-import pdf from "../../Assets/resume(French).pdf";
+import pdf from "@assets/docs/resume(French).pdf";
 
 const Resume = () => {
 	return (
@@ -14,12 +13,7 @@ const Resume = () => {
 			{/* <Particle /> */}
 			<Container>
 				<Row style={{ justifyContent: "center", position: "relative", width: "100%" }}>
-					<Button
-						variant="primary"
-						href={pdf}
-						target="_blank"
-						style={{ width: " fit-content" }}
-					>
+					<Button variant="primary" href={pdf} target="_blank" style={{ width: " fit-content" }}>
 						<AiOutlineDownload />
 						&nbsp;Download CV (French version)
 					</Button>
@@ -27,20 +21,13 @@ const Resume = () => {
 				<Row className="resume">
 					<Col md={6} className="resume-left">
 						<h3 className="resume-title">Experiences</h3>
-						<img
-							src={workSpace}
-							alt="experiences"
-							className="img-fluid"
-							style={{ marginBottom: "30px" }}
-						/>
+						<img src={workSpace} alt="experiences" className="img-fluid" style={{ marginBottom: "30px" }} />
 						<ResumeContent
 							title="
                            FullStack Software Engineer"
 							company="Hightech Payment Systems ( HPS World Wide )"
 							date="May 2021 - Present"
-							content={[
-								"Involved in the customization and improvement of the PowerCard solution.",
-							]}
+							content={["Involved in the customization and improvement of the PowerCard solution."]}
 						/>
 						<ResumeContent
 							title="
@@ -63,9 +50,7 @@ const Resume = () => {
                             FullStack Developer Intern"
 							company="IntellCap"
 							date="Jul 2018 - Aug 2018"
-							content={[
-								"Developing an HR platform to bring together job offers and requests and/or internships",
-							]}
+							content={["Developing an HR platform to bring together job offers and requests and/or internships"]}
 							tools={{
 								exist: true,
 								dev: "Java, Spring Framework (Spring Security, Spring Boot),React.js, MySql, Rest API, IntellijIdea, VS Code.",
@@ -76,9 +61,7 @@ const Resume = () => {
                             FullStack Developer Intern"
 							company="DATAEmbassy"
 							date="Jul 2020 - Apr 2021"
-							content={[
-								"Developing a booking platform on behalf of a traveling company. ",
-							]}
+							content={["Developing a booking platform on behalf of a traveling company. "]}
 							tools={{
 								exist: true,
 								dev: "Java, Spring Framework ( Spring Boot, Spring Security ),React.js, MySql, UX/UI design (Practices), VSCode.",
@@ -87,12 +70,7 @@ const Resume = () => {
 					</Col>
 					<Col md={6} className="resume-right">
 						<h3 className="resume-title">Education</h3>
-						<img
-							src={work}
-							alt="home pic"
-							className="img-fluid"
-							style={{ marginBottom: "30px" }}
-						/>
+						<img src={work} alt="home pic" className="img-fluid" style={{ marginBottom: "30px" }} />
 						<ResumeContent
 							title="Moroccan National Higher School for Computer Science of Rabat"
 							date="2017 - 2020"
@@ -103,12 +81,7 @@ const Resume = () => {
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: "center", position: "relative" }}>
-					<Button
-						variant="primary"
-						href={pdf}
-						target="_blank"
-						style={{ width: " fit-content" }}
-					>
+					<Button variant="primary" href={pdf} target="_blank" style={{ width: " fit-content" }}>
 						<AiOutlineDownload />
 						&nbsp;Download CV (French version)
 					</Button>
