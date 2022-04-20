@@ -95,7 +95,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 -    [ ] Improve performances.
 -    [ ] Deep code refactoring.
 -    [ ] Improve UI (Desktop & mobile).
--    [ ] Add Terminal UI.
+-    [x] Add Terminal UI.
 -    [x] Button to download resume/CV.
 -    [x] Customize the number of projects to show in website.
 -    [ ] Blog page.
