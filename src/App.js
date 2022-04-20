@@ -34,11 +34,11 @@ const App = () => {
 				<Navbar />
 				<ScrollToTop />
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/project" element={<Projects />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/cv" element={<Resume />} />
-					<Route path="/terminal" element={<Terminal />} />
+					<Route path="/resume" element={<Home />} />
+					<Route path="/resume/project" element={<Projects />} />
+					<Route path="/resume/about" element={<About />} />
+					<Route path="/resume/cv" element={<Resume />} />
+					<Route path="/resume/terminal" element={<Terminal />} />
 				</Routes>
 				<Footer />
 			</div>
