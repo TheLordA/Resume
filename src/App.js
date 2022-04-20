@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Pages
 import Home from "@pages/Home";
@@ -30,21 +30,21 @@ const App = () => {
 	}, []);
 
 	return (
-		<Router>
+		<BrowserRouter>
 			<Preloader load={load} />
 			<div className="App" id={load ? "no-scroll" : "scroll"}>
 				<Navbar />
 				<ScrollToTop />
-				<Switch>
-					<Route path="/resume" exact component={Home} />
-					<Route path="/resume/project" component={Projects} />
-					<Route path="/resume/about" component={About} />
-					<Route path="/resume/cv" component={Resume} />
-					<Route path="/resume/terminal" component={Terminal} />
-				</Switch>
+				<Routes>
+					<Route path="/resume" element={<Home />} />
+					<Route path="/resume/project" element={<Projects />} />
+					<Route path="/resume/about" element={<About />} />
+					<Route path="/resume/cv" element={<Resume />} />
+					<Route path="/resume/terminal" element={<Terminal />} />
+				</Routes>
 				<Footer />
 			</div>
-		</Router>
+		</BrowserRouter>
 	);
 };
 

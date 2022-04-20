@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from "react";
 
 import Line from "../../components/Terminal UI/Line";

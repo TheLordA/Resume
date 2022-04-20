@@ -37,7 +37,7 @@ const ProjectCards = (props) => {
 				<Card.Title className="purple">{title || <Skeleton />}</Card.Title>
 				<Card.Text style={{ textAlign: "justify" }}>{description}</Card.Text>
 				<Card.Footer className="text-muted">
-					<div style={{ "display": "grid", "grid-template-columns": "19% 19% 62%" }}>
+					<div style={{ "display": "grid", "gridTemplateColumns": "19% 19% 62%" }}>
 						<Col>
 							<FiStar style={{ color: "white", marginRight: "5px" }} />
 							<span className="purple">{stars}</span>

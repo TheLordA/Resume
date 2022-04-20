@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 
 const Cat = (props) => {
 	const { line } = props;
-	const style = {
-		align: "middle",
-	};
+	// const style = {
+	// 	align: "middle",
+	// };
 
 	const information = {
 		about:
@@ -17,8 +17,7 @@ const Cat = (props) => {
 			"I'm a 2020 graduate of the Moroccan National Higher School for Computer Science of Rabat. I hold an Engineering degree in Web Engineering and Mobile Computing.",
 		projects: [
 			{
-				projectName:
-					"Resume - A personal static website/portfolio hosted with GitHub Pages, built to showcase my recent projects.",
+				projectName: "Resume - A personal static website/portfolio hosted with GitHub Pages, built to showcase my recent projects.",
 				linkToGithub: "https://github.com/TheLordA/resume",
 			},
 			{
@@ -32,8 +31,7 @@ const Cat = (props) => {
 				linkToGithub: "https://github.com/TheLordA/Colosseum",
 			},
 			{
-				projectName:
-					"Socialify - Social Media App that pleasantly brings all networking Apps features, Built with RactNative and Expo.",
+				projectName: "Socialify - Social Media App that pleasantly brings all networking Apps features, Built with RactNative and Expo.",
 				linkToGithub: "https://github.com/TheLordA/Socialify",
 			},
 			{

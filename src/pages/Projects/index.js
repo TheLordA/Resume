@@ -16,7 +16,6 @@ const Projects = () => {
 			const response = await axios.get(GitHubProfile);
 			// slicing to the length
 			repoList = [...response.data.slice(0, 7)];
-			console.log(repoList);
 			// setting projectArray
 			// TODO: remove the duplication.
 			setProjects(repoList);
@@ -40,9 +39,8 @@ const Projects = () => {
 				<Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 					{projects.length
 						? projects.map((project, index) => (
-								<Col md={4} className="project-card">
+								<Col md={4} className="project-card" key={`card-item-${index}`}>
 									<ProjectCard
-										key={index}
 										title={project.name}
 										description={project.description}
 										stars={project.stargazers_count}
