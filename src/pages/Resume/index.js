@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
 //import Particle from "../Particle";
-import workSpace from "@assets/images/about.svg";
-import work from "@assets/images/workspace.svg";
+import workSpace from "assets/images/about.svg";
+import work from "assets/images/workspace.svg";
 import ResumeContent from "./ResumeContent";
-import pdf from "@assets/docs/resume(French).pdf";
+import pdf from "assets/docs/resume(French).pdf";
 
 const Resume = () => {
 	return (

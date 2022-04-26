@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Nav, Navbar, Container, Button } from "react-bootstrap/Navbar";
+import { Nav, Navbar, Container, Button } from "react-bootstrap";
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { BsTerminal } from "react-icons/bs";
+
+import "./index.scss";
 
 const NavBar = () => {
 	const [expand, updateExpanded] = useState(false);

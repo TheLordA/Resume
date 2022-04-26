@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import cx from "classnames";
 
 // Pages
-import Home from "@pages/Home";
-import About from "@pages/About";
-import Projects from "@pages/Projects";
-import Resume from "@pages/Resume";
-import Terminal from "@pages/Terminal";
+import Home from "pages/Home";
+import About from "pages/About";
+import Projects from "pages/Projects";
+import Resume from "pages/Resume";
+import Terminal from "pages/Terminal";
 
 // Components
-import Preloader from "@components/Pre";
-import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
-import ScrollToTop from "@components/ScrollToTop";
+import { PreLoader, NavBar, Footer } from "components";
+
+// Utilities
+import { ScrollToTop } from "utils";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "assets/styles/main.scss";
 import "./style.css";
 
 const App = () => {
@@ -31,9 +32,14 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<Preloader load={load} />
-			<div className="App" id={load ? "no-scroll" : "scroll"}>
-				<Navbar />
+			<PreLoader load={load} />
+			<div
+				className={cx("App", {
+					"no-scroll": load,
+					"scroll": !load,
+				})}
+			>
+				<NavBar />
 				<ScrollToTop />
 				<Routes>
 					<Route path="/resume" element={<Home />} />
