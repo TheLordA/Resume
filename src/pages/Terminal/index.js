@@ -1,9 +1,9 @@
 /* eslint-disable array-callback-return */
 import React, { useState } from "react";
 
-import Line from "../components/Terminal UI/Line";
-import Cat from "../components/Terminal UI/Cat";
-import Ls from "../components/Terminal UI/Ls";
+import Line from "components/Terminal UI/Line";
+import Cat from "components/Terminal UI/Cat";
+import Ls from "components/Terminal UI/Ls";
 
 import "./Terminal.css";
 

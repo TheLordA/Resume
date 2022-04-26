@@ -1,11 +1,10 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import { Col, Card, Button } from "react-bootstrap";
 import Skeleton from "react-loading-skeleton";
 import { BiLinkExternal, BiGitRepoForked } from "react-icons/bi";
 import { FiStar } from "react-icons/fi";
 import { MdUpdate } from "react-icons/md";
+
 const ProjectCards = (props) => {
 	const { title, description, link, stars, forks, isBlog, pushed_at } = props;
 	const [updated_at, setUpdated_at] = useState("0 mints");

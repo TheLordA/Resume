@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+import { Nav, Navbar, Container, Button } from "react-bootstrap";
 import { CgGitFork, CgFileDocument } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { BsTerminal } from "react-icons/bs";
+
+import "./index.scss";
 
 const NavBar = () => {
 	const [expand, updateExpanded] = useState(false);
@@ -47,23 +46,14 @@ const NavBar = () => {
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link
-								as={Link}
-								to="/resume/about"
-								onClick={() => updateExpanded(false)}
-							>
+							<Nav.Link as={Link} to="/resume/about" onClick={() => updateExpanded(false)}>
 								<AiOutlineUser style={{ marginBottom: "2px" }} /> About
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link
-								as={Link}
-								to="/resume/project"
-								onClick={() => updateExpanded(false)}
-							>
-								<AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
-								Projects
+							<Nav.Link as={Link} to="/resume/project" onClick={() => updateExpanded(false)}>
+								<AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
 							</Nav.Link>
 						</Nav.Item>
 
@@ -74,11 +64,7 @@ const NavBar = () => {
 						</Nav.Item>
 
 						<Nav.Item>
-							<Nav.Link
-								as={Link}
-								to="/resume/terminal"
-								onClick={() => updateExpanded(false)}
-							>
+							<Nav.Link as={Link} to="/resume/terminal" onClick={() => updateExpanded(false)}>
 								<BsTerminal style={{ marginBottom: "2px" }} /> Terminal
 							</Nav.Link>
 						</Nav.Item>
@@ -94,13 +80,8 @@ const NavBar = () => {
 						</Nav.Item> */}
 
 						<Nav.Item className="fork-btn">
-							<Button
-								href="https://github.com/thelorda/resume/"
-								target="_blank"
-								className="fork-btn-inner"
-							>
-								<CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-								<AiFillStar style={{ fontSize: "1.1em" }} />
+							<Button href="https://github.com/thelorda/resume/" target="_blank" className="fork-btn-inner">
+								<CgGitFork style={{ fontSize: "1.2em" }} /> <AiFillStar style={{ fontSize: "1.1em" }} />
 							</Button>
 						</Nav.Item>
 					</Nav>

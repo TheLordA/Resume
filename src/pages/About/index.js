@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import Img from "../../Assets/about-ill1.svg";
+import Img from "assets/images/about-ill1.svg";
 import Toolstack from "./Toolstack";
 
 const About = () => {
@@ -24,11 +24,7 @@ const About = () => {
 						</h1>
 						<Aboutcard />
 					</Col>
-					<Col
-						md={6}
-						style={{ paddingTop: "120px", paddingBottom: "50px" }}
-						className="about-img"
-					>
+					<Col md={6} style={{ paddingTop: "120px", paddingBottom: "50px" }} className="about-img">
 						<img src={Img} alt="about" className="img-fluid" />
 						<p
 							style={{
