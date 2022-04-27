@@ -15,6 +15,7 @@ import { PreLoader, NavBar, Footer } from "components";
 // Utilities
 import { ScrollToTop } from "utils";
 
+// Styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "assets/styles/main.scss";
 import "./style.css";
