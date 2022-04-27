@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
-import ProjectCard from "./ProjectCards";
 //import Particle from "../Particle";
+import { ProjectsCard } from "features/Projects";
 
 const Projects = () => {
 	const [projects, setProjects] = useState([]);
@@ -40,7 +40,7 @@ const Projects = () => {
 					{projects.length
 						? projects.map((project, index) => (
 								<Col md={4} className="project-card" key={`card-item-${index}`}>
-									<ProjectCard
+									<ProjectsCard
 										title={project.name}
 										description={project.description}
 										stars={project.stargazers_count}

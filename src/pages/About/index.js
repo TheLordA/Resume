@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
+import { GithubCalender, AboutCard, TechStack, ToolStack } from "features/About";
+
 import Img from "assets/images/about-ill1.svg";
-import Toolstack from "./Toolstack";
 
 const About = () => {
 	return (
@@ -22,7 +20,7 @@ const About = () => {
 						<h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
 							Know Who <strong className="purple">I'M</strong>
 						</h1>
-						<Aboutcard />
+						<AboutCard />
 					</Col>
 					<Col md={6} style={{ paddingTop: "120px", paddingBottom: "50px" }} className="about-img">
 						<img src={Img} alt="about" className="img-fluid" />
@@ -44,14 +42,14 @@ const About = () => {
 					Professional <strong className="purple">Skillset </strong>
 				</h1>
 
-				<Techstack />
+				<TechStack />
 
 				<h1 className="project-heading">
 					<strong className="purple">Tools</strong> I use
 				</h1>
-				<Toolstack />
+				<ToolStack />
 
-				<Github />
+				<GithubCalender />
 			</Container>
 		</Container>
 	);

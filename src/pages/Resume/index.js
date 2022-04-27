@@ -4,7 +4,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 //import Particle from "../Particle";
 import workSpace from "assets/images/about.svg";
 import work from "assets/images/workspace.svg";
-import ResumeContent from "./ResumeContent";
+import { ResumeContent } from "features/Resume";
 import pdf from "assets/docs/resume(French).pdf";
 
 const Resume = () => {
