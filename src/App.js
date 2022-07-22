@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import cx from "classnames";
 
@@ -10,7 +11,11 @@ import Resume from "pages/Resume";
 import Terminal from "pages/Terminal";
 
 // Components
-import { PreLoader, NavBar, Footer } from "components";
+import { PreLoader, Footer } from "components";
+import { NavBar } from "components/molecules";
+
+// hooks
+import { useDialog } from "hooks";
 
 // Utilities
 import { ScrollToTop } from "utils";
@@ -21,11 +26,11 @@ import "assets/styles/main.scss";
 import "./style.css";
 
 const App = () => {
-	const [load, updateLoad] = useState(true);
+	const [loading, toggleLoading] = useDialog(true);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			updateLoad(false);
+			toggleLoading();
 		}, 1200);
 
 		return () => clearTimeout(timer);
@@ -33,13 +38,12 @@ const App = () => {
 
 	return (
 		<BrowserRouter>
-			<PreLoader load={load} />
+			<PreLoader load={loading} />
 			<div
 				className={cx("App", {
-					"no-scroll": load,
-					"scroll": !load,
-				})}
-			>
+					"no-scroll": loading,
+					"scroll": !loading
+				})}>
 				<NavBar />
 				<ScrollToTop />
 				<Routes>

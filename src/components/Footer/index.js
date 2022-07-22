@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
+import { footerSocialItems } from "utils/constants";
 import "./index.scss";
 
 const Footer = () => {
@@ -22,27 +21,15 @@ const Footer = () => {
 				</Col>
 				<Col md="4" className="footer__body">
 					<ul className="footer__icons">
-						<li className="social-icons">
-							<a href="https://github.com/thelorda" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
-								<AiFillGithub />
-							</a>
-						</li>
-						<li className="social-icons">
-							<a href="https://www.linkedin.com/in/anass-ferrak/" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
-								<FaLinkedinIn />
-							</a>
-						</li>
-						<li className="social-icons">
-							<a href="https://twitter.com/#" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
-								<AiOutlineTwitter />
-							</a>
-						</li>
-
-						<li className="social-icons">
-							<a href="https://www.instagram.com/#" style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
-								<AiFillInstagram />
-							</a>
-						</li>
+						{footerSocialItems.map((item, index) => {
+							return (
+								<li key={index} className="social-icons">
+									<a href={item.url} style={{ color: "white" }} target="_blank" rel="noopener noreferrer">
+										<item.icon />
+									</a>
+								</li>
+							);
+						})}
 					</ul>
 				</Col>
 			</Row>
